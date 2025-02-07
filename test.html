@@ -1,0 +1,394 @@
+
+
+<style>
+
+    @media (max-width: 575px),only screen and (min-width:576px)and (max-width:767px),only screen and (min-width:768px)and (max-width:991px) {
+        .tp-fun-fact-area {
+            overflow:hidden
+        }
+    }
+    
+    .tp-fun-fact-shape .shape-1 {
+        position: absolute;
+        top: 0;
+        left: 20px;
+        animation: scale_up_down 1s infinite alternate both
+    }
+    
+    .tp-fun-fact-shape .shape-2 {
+        position: absolute;
+        bottom: -75%;
+        left: -25%;
+        opacity: .6;
+        animation: animationglob 30s cubic-bezier(1,.99,.03,.01) infinite
+    }
+    
+    @media only screen and (min-width: 1600px)and (max-width:1700px) {
+        .tp-fun-fact-shape .shape-2 {
+            bottom:-82%;
+            left: -30%
+        }
+    }
+    
+    @media only screen and (min-width: 1400px)and (max-width:1599px) {
+        .tp-fun-fact-shape .shape-2 {
+            bottom:-90%;
+            left: -30%
+        }
+    }
+    
+    @media only screen and (min-width: 1200px)and (max-width:1399px) {
+        .tp-fun-fact-shape .shape-2 {
+            bottom:-90%;
+            left: -42%
+        }
+    }
+    
+    @media only screen and (min-width: 992px)and (max-width:1199px) {
+        .tp-fun-fact-shape .shape-2 {
+            bottom:-85%;
+            left: -50%
+        }
+    }
+    
+    @media (max-width: 575px),only screen and (min-width:576px)and (max-width:767px),only screen and (min-width:768px)and (max-width:991px) {
+        .tp-fun-fact-shape .shape-2 {
+            display:none
+        }
+    }
+    
+    .tp-fun-fact-shape .shape-3 {
+        position: absolute;
+        bottom: 0;
+        right: 0
+    }
+    
+    .tp-fun-fact-shape .shape-4 {
+        position: absolute;
+        top: 20px;
+        right: 85px;
+        animation: tpupdown 1s infinite alternate
+    }
+    
+    .tp-fun-fact-shape .shadow {
+        position: absolute;
+        top: -60%;
+        left: 0;
+        z-index: -1
+    }
+    
+    @media only screen and (min-width: 1200px)and (max-width:1399px) {
+        .tp-fun-fact-shape .shadow {
+            top:7%;
+            left: 0
+        }
+    }
+    
+    @media (max-width: 575px),only screen and (min-width:576px)and (max-width:767px),only screen and (min-width:768px)and (max-width:991px),only screen and (min-width:992px)and (max-width:1199px) {
+        .tp-fun-fact-shape .shadow {
+            display:none
+        }
+    }
+    
+    .tp-fun-fact-wrapper {
+        margin-bottom: 80px
+    }
+    
+    @media (max-width: 575px),only screen and (min-width:576px)and (max-width:767px) {
+        .tp-fun-fact-wrapper {
+            margin-bottom:40px
+        }
+    }
+    
+    .tp-fun-fact-wrapper-box {
+        margin-top: -40px
+    }
+    
+    @media only screen and (min-width: 1400px)and (max-width:1599px) {
+        .tp-fun-fact-wrapper-box {
+            margin-left:60px
+        }
+    }
+    
+    .tp-fun-fact-wrapper .counter-title {
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 49px;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: hsla(0,0%,100%,.5);
+        margin-bottom: 30px
+    }
+    
+    .tp-fun-fact-wrapper p {
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: .25em;
+        color: var(--tp-common-white)
+    }
+    
+    .tp-fun-fact-thumb {
+        margin-left: -25px
+    }
+    
+    @media only screen and (min-width: 1400px)and (max-width:1599px) {
+        .tp-fun-fact-thumb {
+            margin-left:0
+        }
+    }
+    
+    @media only screen and (min-width: 768px)and (max-width:991px) {
+        .tp-fun-fact-thumb {
+            margin-left:-60px
+        }
+    }
+    
+    @media (max-width: 575px),only screen and (min-width:576px)and (max-width:767px) {
+        .tp-fun-fact-thumb {
+            margin-left:0;
+            margin-bottom: 40px
+        }
+    }
+    
+    @media only screen and (min-width: 1200px)and (max-width:1399px) {
+        .tp-fun-fact-thumb img {
+            width:120%;
+            margin-top: 25px
+        }
+    }
+    
+    @media only screen and (min-width: 992px)and (max-width:1199px) {
+        .tp-fun-fact-thumb img {
+            max-width:136%
+        }
+    }
+    
+    @media(max-width: 575px) {
+        .tp-fun-fact-thumb img {
+            max-width:100%
+        }
+    }
+    
+    .tp-fun-fact-content {
+        padding-left: 92px
+    }
+    
+    @media (max-width: 575px),only screen and (min-width:576px)and (max-width:767px),only screen and (min-width:768px)and (max-width:991px) {
+        .tp-fun-fact-content {
+            padding-left:0;
+            padding-bottom: 50px
+        }
+    }
+    
+    .tp-fun-fact-title-wrapper .tp-section-title {
+        color: var(--tp-common-white);
+        margin-bottom: 30px
+    }
+    
+    .tp-fun-fact-title-wrapper .tp-section-title__pre {
+        color: var(--tp-common-white)
+    }
+    
+    .tp-fun-fact-title-wrapper.support-breadcrumb .tp-section-title {
+        color: var(--tp-theme-primary)
+    }
+    
+    .tp-fun-fact-title-wrapper.support-breadcrumb .tp-section-title__pre {
+        color: var(--tp-text-2)
+    }
+    
+    .tp-fun-fact-title-wrapper p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 35px
+    }
+    
+    @media (max-width: 575px),only screen and (min-width:1200px)and (max-width:1399px),only screen and (min-width:576px)and (max-width:767px) {
+        .tp-fun-fact-title-wrapper p br {
+            display:none
+        }
+    }
+    
+    .tp-fun-fact-title-wrapper ul li {
+        list-style: none;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #6f7183;
+        margin-bottom: 20px
+    }
+    
+    .tp-fun-fact-title-wrapper ul li span {
+        color: var(--tp-theme-secondary);
+        margin-right: 18px
+    }
+    
+    @media(max-width: 575px) {
+        .tp-fun-fact-title-wrapper ul li span {
+            margin-right:10px
+        }
+    }
+    
+    .tp-fun-fact-btn .tp-btn {
+        background: hsla(0,0%,100%,.04);
+        margin-top: 30px;
+        padding: 21px 45px
+    }
+    
+    .tp-counter-area {
+        background: rgba(232,247,253,.5)
+    }
+    
+    .tp-counter-area.counter-breadcrumb {
+        background: none
+    }
+    
+    .tp-counter-area.counter-breadcrumb:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: rgba(232,247,253,.5);
+        height: 68%;
+        width: 100%;
+        z-index: -1
+    }
+    
+    .tp-counter-box {
+        background: var(--tp-common-white);
+        box-shadow: 0 -2px 20px rgba(0,0,0,.06);
+        padding: 38px 60px
+    }
+    
+    .tp-counter-wrapper {
+        position: relative;
+        z-index: 1
+    }
+    
+    @media (max-width: 575px),only screen and (min-width:576px)and (max-width:767px),only screen and (min-width:768px)and (max-width:991px) {
+        .tp-counter-wrapper {
+            margin-bottom:30px
+        }
+    }
+    
+    .tp-counter-wrapper .counter-title {
+        position: relative;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 42px;
+        color: #090707;
+        margin-bottom: 17px
+    }
+    
+    .tp-counter-wrapper .counter-title:after {
+        position: absolute;
+        content: "";
+        height: 22px;
+        width: 22px;
+        border-radius: 50%;
+        top: 0;
+        left: 135px;
+        display: inline-block;
+        opacity: 0;
+        z-index: -1;
+        background: var(--tp-theme-secondary);
+        transition: all .3s ease-in
+    }
+    
+    </style>
+    
+    
+    
+    
+    
+    
+    
+        <section class="tp-fun-fact-area pt-80 pb-65 p-relative">
+            <div class="container container-1400">
+                <div class="tp-fun-fact-shape" style="z-index: -22;">
+                    <img alt="theme-pure" width="90" height="50"
+                        class="shape-1"
+                        srcset="img/world.png 1x, img/world.png 2x"
+                        src="img/world.png"
+                        style="color: transparent;"><img alt="theme-pure" width="837" height="703"
+                        class="shape-2"
+                        srcset="img/world.png 1x, img/world.png 2x"
+                        src="img/world.png"
+                        style="color: transparent;"><img alt="theme-pure" width="460" height="444"
+                        class="shape-3"
+                        srcset="img/world.png 1x, img/world.png 2x"
+                        src="img/world.png"
+                        style="color: transparent;"><img alt="theme-pure" width="81" height="62"
+                        class="shape-4"
+                        srcset="img/world.png 1x, img/world.png 2x"
+                        src="img/world.png"
+                        style="color: transparent;">
+                </div>
+                <div class="row">
+                    <div class="col-lg-2 col-md-4">
+                        <div class="tp-fun-fact-wrapper-box">
+                            <div class="tp-fun-fact-wrapper">
+                                <h3 class="counter-title "><span data-purecounter-duration="4" class="purecounter">
+                                        <div class="d-flex "><span>5</span><span><span>*</span></span></div>
+                                    </span></h3>
+                                <p>Star </p>
+                            </div>
+                            <div class="tp-fun-fact-wrapper">
+                                <h3 class="counter-title purecounter"><span data-purecounter-duration="4"
+                                        class="purecounter">
+                                        <div class="d-flex "><span>35</span><span><span>+</span></span></div>
+                                    </span></h3>
+                                <p>State</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-8">
+                        <div class="tp-fun-fact-thumb p-relative"><img id="reload" alt="scroll" width="464"
+                                height="464"
+                                srcset="img/world.png 1x, img/world.png 2x"
+                                src="img/world.png"
+                                style="color: transparent; transform: rotate(1608deg);"></div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="tp-fun-fact-content">
+                            <div class="tp-fun-fact-title-wrapper">
+                                <h3 class="tp-section-title">What makes internetone.live different?<span
+                                        class="title-left-shape"><svg width="194" height="5" viewBox="0 0 194 5" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M193.649 4.22307C129.517 2.55338 65.7543 2.288 1.66891 4.99709C-0.571625 5.09661 -0.540924 2.60867 1.66891 2.48703C65.34 -0.962917 130.116 -1.06243 193.649 3.70336C194.109 3.73653 194.125 4.23412 193.649 4.22307Z"
+                                                fill="#05DAC3"></path>
+                                        </svg></span></h3>
+                                <p>Discover service providers effortlessly. Enter your zip code to access a comprehensive
+                                    list of internet, TV, and phone providers. Stay updated with our real-time data</p>
+                                <ul>
+                                    <li><span> <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M15.794 2.17595C14.426 3.42395 13.094 4.87595 11.798 6.53195C10.67 7.95995 9.656 9.42395 8.756 10.924C7.94 12.268 7.346 13.42 6.974 14.38C6.962 14.416 6.938 14.446 6.902 14.47C6.866 14.506 6.824 14.524 6.776 14.524C6.764 14.536 6.752 14.542 6.74 14.542C6.656 14.542 6.596 14.518 6.56 14.47L0.134 7.93595C0.122 7.92395 0.278 7.76795 0.602 7.46795C0.926 7.15595 1.244 6.87395 1.556 6.62195C1.904 6.33395 2.09 6.20195 2.114 6.22595L5.642 8.99795C6.674 7.78595 7.832 6.58595 9.116 5.39795C11.048 3.62195 13.04 2.10995 15.092 0.861953C15.128 0.861953 15.266 1.02995 15.506 1.36595L15.866 1.88795C15.878 1.93595 15.878 1.98995 15.866 2.04995C15.854 2.09795 15.83 2.13995 15.794 2.17595Z"
+                                                    fill="currentColor"></path>
+                                            </svg></span>Simple and easy search</li>
+                                    <li><span><svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M15.794 2.17595C14.426 3.42395 13.094 4.87595 11.798 6.53195C10.67 7.95995 9.656 9.42395 8.756 10.924C7.94 12.268 7.346 13.42 6.974 14.38C6.962 14.416 6.938 14.446 6.902 14.47C6.866 14.506 6.824 14.524 6.776 14.524C6.764 14.536 6.752 14.542 6.74 14.542C6.656 14.542 6.596 14.518 6.56 14.47L0.134 7.93595C0.122 7.92395 0.278 7.76795 0.602 7.46795C0.926 7.15595 1.244 6.87395 1.556 6.62195C1.904 6.33395 2.09 6.20195 2.114 6.22595L5.642 8.99795C6.674 7.78595 7.832 6.58595 9.116 5.39795C11.048 3.62195 13.04 2.10995 15.092 0.861953C15.128 0.861953 15.266 1.02995 15.506 1.36595L15.866 1.88795C15.878 1.93595 15.878 1.98995 15.866 2.04995C15.854 2.09795 15.83 2.13995 15.794 2.17595Z"
+                                                    fill="currentColor"></path>
+                                            </svg> </span>Discover the top providers in your area</li>
+                                    <li><span><svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M15.794 2.17595C14.426 3.42395 13.094 4.87595 11.798 6.53195C10.67 7.95995 9.656 9.42395 8.756 10.924C7.94 12.268 7.346 13.42 6.974 14.38C6.962 14.416 6.938 14.446 6.902 14.47C6.866 14.506 6.824 14.524 6.776 14.524C6.764 14.536 6.752 14.542 6.74 14.542C6.656 14.542 6.596 14.518 6.56 14.47L0.134 7.93595C0.122 7.92395 0.278 7.76795 0.602 7.46795C0.926 7.15595 1.244 6.87395 1.556 6.62195C1.904 6.33395 2.09 6.20195 2.114 6.22595L5.642 8.99795C6.674 7.78595 7.832 6.58595 9.116 5.39795C11.048 3.62195 13.04 2.10995 15.092 0.861953C15.128 0.861953 15.266 1.02995 15.506 1.36595L15.866 1.88795C15.878 1.93595 15.878 1.98995 15.866 2.04995C15.854 2.09795 15.83 2.13995 15.794 2.17595Z"
+                                                    fill="currentColor"></path>
+                                            </svg> </span>ompare prices, speeds, channels and more</li>
+                                </ul>
+                                <div class="tp-fun-fact-btn"><a class="tp-btn" href="mailto:internetone.live@gmail.com">Tell
+                                        us How Can We Help</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    
